@@ -6,6 +6,8 @@ import com.leetjourney.device_service.service.DeviceService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/device")
 public class DeviceController {
@@ -38,5 +40,12 @@ public class DeviceController {
     public ResponseEntity<DeviceDto> deleteDevice(@PathVariable Long id) {
         deviceService.deleteDevice(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<DeviceDto>> getAllDevicesByUserId(
+            @PathVariable Long userId) {
+        List<DeviceDto> devices = deviceService.getAllDevicesByUserId(userId);
+        return ResponseEntity.ok(devices);
     }
 }

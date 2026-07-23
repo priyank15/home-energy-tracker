@@ -55,4 +55,6 @@ The system is a **microservices architecture** built primarily with **Spring Boo
 | **alert-service** | `8084` | Consume alert events, notify users (e.g. email) | Spring Boot 4.1, Kafka, JPA, Mail, MySQL, Actuator/Prometheus | Kafka consumer; SMTP (Mailpit locally); MySQL where applicable |
 | **insight-service** | `8085` | Usage insights (e.g. LLM-backed explanations via Ollama) | Spring Boot 4.1, Spring AI, Ollama starter, Actuator/Prometheus | Invoked via gateway; optional external Ollama runtime |
 
+**Planned additions: React Front-End & Cloud Deployment of containers**
+
 **More Details and step by step instructions to follow soon**

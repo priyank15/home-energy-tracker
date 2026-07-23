@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: home_energy_tracker
+      MYSQL_DATABASE: smart_power_monitor
     ports:
       - "3306:3306"
     volumes:
@@ -107,7 +107,7 @@ services:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=admin
       - DOCKER_INFLUXDB_INIT_PASSWORD=admin123
-      - DOCKER_INFLUXDB_INIT_ORG=leetjourney
+      - DOCKER_INFLUXDB_INIT_ORG=priyankdevurkar
       - DOCKER_INFLUXDB_INIT_BUCKET=usage-bucket
       - DOCKER_INFLUXDB_INIT_RETENTION=1w
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=my-token

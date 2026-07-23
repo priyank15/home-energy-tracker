@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/home-energy-tracker.iml" filepath="$PROJECT_DIR$/home-energy-tracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-power-monitor.iml" filepath="$PROJECT_DIR$/smart-power-monitor.iml" />
     </modules>
   </component>
 </project>
